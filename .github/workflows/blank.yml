@@ -27,6 +27,9 @@ jobs:
       - name: init-simulation-site
         uses: DevGrammo/init-simulation-app-action@v1.1
         
+      - name: print vars
+        run: echo here actor ${{ github.actor }} and  ${{ github.repository }}
+        
       - name: test page api
         run: | 
           curl \
